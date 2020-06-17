@@ -1,0 +1,421 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="last-modified" content="2020-06-09 11:46:46 +0100">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta "search-domain" used for google site search function google_search() -->
+    <meta name="search-domain" value="">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/lesson.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/syntax.css" />
+
+    
+
+
+
+    <!-- Favicons for everyone -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/favicons//apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/favicons//apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/favicons//apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/favicons//apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../assets/favicons//apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../assets/favicons//apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../assets/favicons//apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../assets/favicons//apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../assets/favicons//favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../assets/favicons//favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/favicons//favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/favicons//favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../assets/favicons//favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content=" - Preparing to run biomolecular QM/MM simulations with CP2K using AmberTools"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../assets/favicons//mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../assets/favicons//mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../assets/favicons//mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../assets/favicons//mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../assets/favicons//mstile-310x310.png" />
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+  <title>
+  CP2K Input Files &ndash; Preparing to run biomolecular QM/MM simulations with CP2K using AmberTools
+  </title>  
+
+  </head>
+  <body>
+
+    
+
+
+
+    <div class="container">
+      
+
+
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      
+      
+
+      
+      <a class="navbar-brand" href="../">Home</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+	
+        <li><a href="../CODE_OF_CONDUCT.html">Code of Conduct</a></li>
+
+        
+	
+        <li><a href="../setup.html">Setup</a></li>
+
+        
+        <li class="dropdown">
+          <a href="../" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Episodes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            <li><a href="../01-overview/index.html">Overview of AmberTools20</a></li>
+            
+            <li><a href="../02-setup/index.html">Log in and environment set up in ARCHER</a></li>
+            
+            <li><a href="../03-prepPDB/index.html">Preparing your PDB file</a></li>
+            
+            <li><a href="../04-parameters/index.html">Parameterising your ligands</a></li>
+            
+            <li><a href="../05-leap/index.html">System set up</a></li>
+            
+            <li><a href="../06-minimisation/index.html">Energy minimisation</a></li>
+            
+            <li><a href="../07-therm/index.html">Thermalisation and Density equilibration</a></li>
+            
+            <li><a href="../08-parmed/index.html">Adding missing LJ parameters and recentering coordinates</a></li>
+            
+            <li><a href="../09-qmmm/index.html">QM/MM monitorisation runs</a></li>
+            
+	    <li role="separator" class="divider"></li>
+            <li><a href="../aio.html">All in one page (Beta)</a></li>
+          </ul>
+        </li>
+	
+
+	
+	
+        <li class="dropdown">
+          <a href="../" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../reference.html">Reference</a></li>
+            
+            <li><a href="../amber/index.html">Amber Input Files</a></li>
+            
+            <li><a href="../cp2k/index.html">CP2K Input Files</a></li>
+            
+          </ul>
+        </li>
+	
+
+	
+        <li><a href="../LICENSE.html">License</a></li>
+	
+	<li><a href="/edit//_extras/cp2k.md" data-checker-ignore>Improve this page <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+	
+      </ul>
+      <form class="navbar-form navbar-right" role="search" id="search" onsubmit="google_search(); return false;">
+        <div class="form-group">
+          <input type="text" id="google-search" placeholder="Search..." aria-label="Google site search">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 class="maintitle"><a href="../">Preparing to run biomolecular QM/MM simulations with CP2K using AmberTools</a>: CP2K Input Files</h1>
+
+<article>
+<h2 id="overview-of-the-cp2k-input">Overview of the <code class="language-plaintext highlighter-rouge">CP2K</code> input</h2>
+
+<p>The CP2K input file, <code class="language-plaintext highlighter-rouge">cp2k_qmmm_equil.inp</code>, is divided in different sections that we will explain separately:</p>
+
+<h3 id="global-section"><code class="language-plaintext highlighter-rouge">&amp;GLOBAL</code> section</h3>
+<p>It contains general information regarding which kind of simulation to perform.</p>
+
+<div class="language-plaintext source highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;GLOBAL
+  PROJECT MD_QMMM                ! Name of the calculation
+  PRINT_LEVEL LOW                ! Verbosity of the output
+  RUN_TYPE MD                    ! Calculation type: MD
+&amp;END GLOBAL
+</code></pre></div></div>
+
+<h3 id="force_eval-section"><code class="language-plaintext highlighter-rouge">&amp;FORCE_EVAL</code> section</h3>
+
+<p>It contains the parameters needed to calculate energy and forces and describe the system you want to analyze. It has several important subsections:</p>
+
+<h4 id="dft-which-specifies-the-parameter-needed-by-lcao-dft-programs"><code class="language-plaintext highlighter-rouge">&amp;DFT</code>, which specifies the parameter needed by LCAO DFT programs</h4>
+
+<div class="language-plaintext source highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;FORCE_EVAL
+  METHOD QMMM                    ! Hybrid quantum classical
+  STRESS_TENSOR ANALYTICAL       ! Compute the stress tensor analytically (if available).
+
+  &amp;DFT                           ! Parameter needed by LCAO DFT programs
+    CHARGE 0                     ! The charge of the QM system
+
+    &amp;QS                          ! parameters needed to set up the Quickstep framework
+      METHOD PM3                 ! Specifies the electronic structure method that should be employed
+      &amp;SE                        ! Parameters needed to set up the Semi-empirical methods
+         &amp;COULOMB                ! parameters for the evaluation of the COULOMB term
+           CUTOFF [angstrom] 10.0
+         &amp;END
+         &amp;EXCHANGE               ! parameters for the evaluation of the EXCHANGE and core Hamiltonian terms
+           CUTOFF [angstrom] 10.0
+         &amp;END
+      &amp;END
+    &amp;END QS
+
+    &amp;SCF                         ! Parameters needed to perform an SCF run
+      MAX_SCF 30                 ! Maximum number of SCF iterations
+      EPS_SCF 1.0E-6             ! Target accuracy for the SCF convergence
+      SCF_GUESS ATOMIC           ! initial guess for the wavefunction: Generate an atomic density using the atomic code
+      &amp;OT                        ! options for the orbital transformation (OT) method
+        MINIMIZER DIIS           ! Minimizer to be used with the OT method
+        PRECONDITIONER FULL_SINGLE_INVERSE
+      &amp;END
+      &amp;OUTER_SCF                 ! parameters controlling the outer SCF loop
+        EPS_SCF 1.0E-6           ! Target gradient of the outer SCF variables
+        MAX_SCF 10               ! Maximum number of outer loops
+      &amp;END
+    &amp;END SCF
+
+  &amp;END DFT
+</code></pre></div></div>
+
+<h4 id="mm-which-includes-the-parameters-to-run-a-mm-calculation-such-as-the-forcefield-here-we-have-to-manually-edit-the-mm-subsection-parm_file_name-and-add-the-modified-topology-name-system_lj_modparm7"><code class="language-plaintext highlighter-rouge">&amp;MM</code>, which includes the parameters to run a MM calculation (such as the forcefield). Here we have to manually edit the &amp;MM subsection PARM_FILE_NAME and add the modified topology name system_LJ_mod.parm7.</h4>
+
+<div class="language-plaintext source highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &amp;MM                            ! Parameters to run a MM calculation
+    &amp;FORCEFIELD                  ! Set up a force_field for the classical calculations
+      PARMTYPE AMBER
+      PARM_FILE_NAME system_LJ_mod.parm7
+      &amp;SPLINE                    ! Parameters to set up the splines used in the nonboned interactions
+        EMAX_SPLINE 1.0E8        ! Maximum value of the potential up to which splines will be constructed
+        RCUT_NB [angstrom] 10    ! Cutoff radius for nonbonded interactions
+      &amp;END SPLINE
+    &amp;END FORCEFIELD
+    &amp;POISSON
+      &amp;EWALD
+      ! Ewald parameters controlling electrostatic
+        EWALD_TYPE SPME          ! Type of ewald
+        ALPHA .40                ! Alpha parameter associated with Ewald (EWALD|PME|SPME)
+        GMAX 80                  ! Number of grid points (SPME and EWALD)
+      &amp;END EWALD
+    &amp;END POISSON
+  &amp;END MM
+</code></pre></div></div>
+
+<h4 id="subsys-which-specifies-the-information-of-the-system-coordinates-topology-molecules-and-cell-here-we-have-to-manually-edit-the-following-sections"><code class="language-plaintext highlighter-rouge">&amp;SUBSYS</code>, which specifies the information of the system: coordinates, topology, molecules and cell. Here we have to manually edit the following sections:</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&amp;CELL</code> subsection with the simulation box size: ABC and ALPHA_BETA_GAMMA.</li>
+  <li><code class="language-plaintext highlighter-rouge">&amp;TOPOLOGY</code> subsection with the Amber topology and coordinate files.</li>
+  <li>We must add any atomtype that CP2K doesn’t recognise such as the counterions (Na+ and NS atom type) and specify their element.</li>
+</ul>
+
+<div class="language-plaintext source highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &amp;SUBSYS                        ! a subsystem: coordinates, topology, molecules and cell
+    &amp;CELL                        !Set box dimensions here
+      ABC [angstrom] XXX XXX XXX
+      ALPHA_BETA_GAMMA XXX XXX XXX
+    &amp;END CELL
+    &amp;TOPOLOGY                    ! Topology for classical runs
+      CONN_FILE_FORMAT AMBER
+      CONN_FILE_NAME system_LJ_mod.parm7
+      COORD_FILE_FORMAT CRD
+      COORD_FILE_NAME system.equil0.rst7
+    &amp;END TOPOLOGY
+    !NA+ is not recognized by CP2K, so it is necessary to define it here using KIND
+    &amp;KIND NA+
+     ELEMENT Na
+    &amp;END KIND
+    &amp;KIND NS
+     ELEMENT N
+    &amp;END KIND
+  &amp;END SUBSYS
+</code></pre></div></div>
+
+<h4 id="qmmm-which-contains-all-the-information-on-the-qmmm-calculation-this-includes-the-definition-of-qm-region-which-we-must-specify-manually"><code class="language-plaintext highlighter-rouge">&amp;QMMM</code>, which contains all the information on the QM/MM calculation. This includes the definition of QM region which we must specify manually.</h4>
+
+<p>We define the QM region here</p>
+
+<div class="language-plaintext source highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &amp;QMMM                            ! Input for QM/MM calculations
+    ECOUPL COULOMB                 ! type of the QM - MM electrostatic coupling
+    &amp;CELL                          ! Set box dimensions here
+      ABC 40 40 40
+      ALPHA_BETA_GAMMA 90 90 90
+    &amp;END CELL
+    &amp;QM_KIND N                     ! N atoms in the QM region
+      MM_INDEX 1 10
+    &amp;END QM_KIND
+    &amp;QM_KIND O                     ! O atoms in the QM region
+      MM_INDEX 8
+    &amp;END QM_KIND
+    &amp;QM_KIND C                     ! C atoms in the QM region
+      MM_INDEX 2 3 4 5 6 7 9 11 12 13 14 15 16
+    &amp;END QM_KIND
+    &amp;QM_KIND H                     ! H atoms in the QM region
+      MM_INDEX 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34
+    &amp;END QM_KIND
+  &amp;END QMMM
+&amp;END FORCE_EVAL
+</code></pre></div></div>
+
+<h3 id="motion-section"><code class="language-plaintext highlighter-rouge">&amp;MOTION</code> section</h3>
+
+<p>It contains all the parameters for the MD run (or motion of nuclei).</p>
+
+<div class="language-plaintext source highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;MOTION                            ! Parameter for the motion of the nuclei
+  &amp;MD                              ! set of parameters needed perform an MD run
+  ENSEMBLE NPT_I                   ! Ensemble/integrator that you want to use for MD
+  TIMESTEP [fs] 0.5                ! Time step
+  STEPS    200                     ! Number of MD steps to perform
+  TEMPERATURE 298                  ! Temperature in K
+  &amp;BAROSTAT                        ! Parameters of barostat.
+    TIMECON [fs] 100
+    PRESSURE [bar] 1.0
+  &amp;END BAROSTAT
+  &amp;THERMOSTAT                      ! Parameters of Thermostat.
+    REGION GLOBAL                  ! region each thermostat is attached to.
+    TYPE CSVR                      ! canonical sampling through velocity rescaling
+    &amp;CSVR
+      TIMECON [fs] 10.
+    &amp;END CSVR
+  &amp;END THERMOSTAT
+  &amp;END MD
+  &amp;PRINT                           ! Printing properties during an MD run
+    &amp;RESTART                       ! Printing of restart files
+      &amp;EACH                        ! A restart file will be printed every 2000 md steps
+        MD 2000
+      &amp;END
+    &amp;END
+    &amp;TRAJECTORY                    ! Controls the output of the trajectory
+      FORMAT DCD                   ! Format of the output trajectory is DCD
+      &amp;EACH                        ! New trajectory frame will be printed each 100 md steps
+        MD 100
+      &amp;END
+    &amp;END
+    &amp;RESTART_HISTORY               ! Controls printing of unique restart files during the run keeping all of them.
+      &amp;EACH                        ! A new restart file will be printed every 5000 md steps
+        MD 5000
+      &amp;END
+    &amp;END
+    &amp;CELL                          ! Controls the output of cell dimensions
+      &amp;EACH                        ! Cell dimensions will be printed each 100 md steps
+        MD 100
+      &amp;END
+    &amp;END
+  &amp;END PRINT
+&amp;END MOTION
+</code></pre></div></div>
+
+
+</article>
+
+      
+      
+
+
+
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-md-6 copyright" align="left">
+	
+    </div>
+    <div class="col-md-6 help-links" align="right">
+	
+	<a href="/edit//_extras/cp2k.md" data-checker-ignore>Edit on GitHub</a>
+	
+	/
+	<a href="/blob//CONTRIBUTING.md" data-checker-ignore>Contributing</a>
+	/
+	<a href="/">Source</a>
+	/
+	<a href="/blob//CITATION" data-checker-ignore>Cite</a>
+	/
+	<a href="mailto:s.llabres@epcc.ed.ac.uk">Contact</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" align="center">
+      Using <a href="https://github.com/carpentries/styles/">The Carpentries style</a>
+      version <a href="https://github.com/carpentries/styles/releases/tag/v9.5.3">9.5.3</a>.
+    </div>
+  </div>
+</footer>
+
+      
+    </div>
+    
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/lesson.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-37305346-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>

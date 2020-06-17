@@ -1,0 +1,892 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="last-modified" content="2020-06-09 11:46:46 +0100">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta "search-domain" used for google site search function google_search() -->
+    <meta name="search-domain" value="">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/lesson.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/syntax.css" />
+
+    
+
+
+
+    <!-- Favicons for everyone -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/favicons//apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/favicons//apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/favicons//apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/favicons//apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/favicons//apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/favicons//apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/favicons//apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/favicons//apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./assets/favicons//favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./assets/favicons//favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./assets/favicons//favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/favicons//favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./assets/favicons//favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content=" - Preparing to run biomolecular QM/MM simulations with CP2K using AmberTools"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./assets/favicons//mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./assets/favicons//mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./assets/favicons//mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./assets/favicons//mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./assets/favicons//mstile-310x310.png" />
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+  <title>
+  Preparing to run biomolecular QM/MM simulations with CP2K using AmberTools &ndash; Preparing to run biomolecular QM/MM simulations with CP2K using AmberTools
+  </title>  
+
+  </head>
+  <body>
+
+    
+
+
+
+    <div class="container">
+      
+
+
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      
+      
+
+      
+      <a class="navbar-brand" href="./">Home</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+	
+        <li><a href="./CODE_OF_CONDUCT.html">Code of Conduct</a></li>
+
+        
+	
+        <li><a href="./setup.html">Setup</a></li>
+
+        
+        <li class="dropdown">
+          <a href="./" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Episodes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            <li><a href="./01-overview/index.html">Overview of AmberTools20</a></li>
+            
+            <li><a href="./02-setup/index.html">Log in and environment set up in ARCHER</a></li>
+            
+            <li><a href="./03-prepPDB/index.html">Preparing your PDB file</a></li>
+            
+            <li><a href="./04-parameters/index.html">Parameterising your ligands</a></li>
+            
+            <li><a href="./05-leap/index.html">System set up</a></li>
+            
+            <li><a href="./06-minimisation/index.html">Energy minimisation</a></li>
+            
+            <li><a href="./07-therm/index.html">Thermalisation and Density equilibration</a></li>
+            
+            <li><a href="./08-parmed/index.html">Adding missing LJ parameters and recentering coordinates</a></li>
+            
+            <li><a href="./09-qmmm/index.html">QM/MM monitorisation runs</a></li>
+            
+	    <li role="separator" class="divider"></li>
+            <li><a href="./aio.html">All in one page (Beta)</a></li>
+          </ul>
+        </li>
+	
+
+	
+	
+        <li class="dropdown">
+          <a href="./" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="./reference.html">Reference</a></li>
+            
+            <li><a href="./amber/index.html">Amber Input Files</a></li>
+            
+            <li><a href="./cp2k/index.html">CP2K Input Files</a></li>
+            
+          </ul>
+        </li>
+	
+
+	
+        <li><a href="./LICENSE.html">License</a></li>
+	
+	<li><a href="/edit//all_data.md" data-checker-ignore>Improve this page <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+	
+      </ul>
+      <form class="navbar-form navbar-right" role="search" id="search" onsubmit="google_search(); return false;">
+        <div class="form-group">
+          <input type="text" id="google-search" placeholder="Search..." aria-label="Google site search">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 class="maintitle"><a href="./">Preparing to run biomolecular QM/MM simulations with CP2K using AmberTools</a>: Preparing to run biomolecular QM/MM simulations with CP2K using AmberTools</h1>
+
+<article>
+<h1 id="preparing-to-run-biomolecular-qmmm-simulations-with-cp2k-using-ambertools">Preparing to run biomolecular QM/MM simulations with CP2K using AmberTools</h1>
+
+<h2 id="introduction">Introduction:</h2>
+
+<p>QM/MM simulations allow us to model different biological processes at atomistic level and study specific properties that no other method can provide (such as photochemical effects, ligand binding, reactivity, and a long etcetera). Also they benefit from the accuracy of quantum mechanics (QM) and the speed of molecular mechanics (MM) methods. However, the preparation of such simulations are not easy and tedious. Additionally often subtle changes in the setup process can affect the validity of the results. This course aims to showcase how set up your system in order to run QM/MM simulations using <a href="https://www.cp2k.org">CP2K</a>.</p>
+
+<p>This course covers basic tools and technologies needed to succeed in the setting up a QM/MM simulation with AmberTools suite, with hands-on exercises. It provides background to preparation of biological systems for molecular modelling and practical experience in successfully creating topologies and running simple QM/MM simulations using CP2K in a HPC environment (<a href="https://www.archer.ac.uk">ARCHER</a>).You will learn the intricacies of molecular modelling of biological systems, as well as practical aspects of handling and preparing PDB files, creating topologies ready to run using CP2K.</p>
+
+<p>At the end of this session you will be able to…</p>
+<ul>
+  <li>Describe the main features of the AmberTools package</li>
+  <li>Build topologies and coordinates ready to use in CP2K</li>
+  <li>Run simple QM/MM simulations in a HPC environment</li>
+</ul>
+
+<p>This online course consists of an interactive hands-on practical session presented remotely using Collaborate. Attendees will be given access to ARCHER to execute the practical.</p>
+
+<p>The duration of the sessions will be between <strong>2 and 3 hours</strong>, depending on the level of interactivity.</p>
+
+<h4 id="prerequisites">Prerequisites:</h4>
+<ul>
+  <li>Comfortable using the Linux command line</li>
+  <li>Prior experience with HPC computing or QM/MM knowledge are not required.</li>
+</ul>
+
+<h4 id="technical-requirements">Technical requirements:</h4>
+<ul>
+  <li>a microphone (webcam is optional) to take part</li>
+  <li>Google Chrome or Firefox to access the session</li>
+  <li>your laptop should have an SSH client (for window user Putty or any choice e.g. WDL) and a valid public SSH key.
+Access to AmberTools and CP2K will be provided on ARCHER</li>
+</ul>
+
+<h4 id="trainers">Trainers:</h4>
+<p>Salome Llabres (EPCC), Julien Sindt (EPCC), Holly Judge (EPCC), Arno Proeme (EPCC)</p>
+
+<p>This online course is a collaboration between <a href="https://www.archer2.ac.uk/training/">ARCHER2 Training</a> and <a href="https://bioexcel.eu">BioExcel</a>.</p>
+
+<p><img src="./images/logos.png" alt="Sponsor logos" /></p>
+
+<hr />
+
+<h2 id="introduction-of-ambertools">Introduction of AmberTools:</h2>
+
+<p><a href="https://ambermd.org/AmberTools.php">AmberTools suite</a> is a set of several independently developed packages developed as part of the Amber20 software package and distributed for free of charge, and its components are mostly released under the GNU General Public License (GPL). They work well by themselves, and with Amber20 itself.</p>
+
+<p><strong>Overview of AmberTools20:</strong> (released on April 31, 2020)</p>
+
+<ul>
+  <li><strong>NAB/sff</strong>: a program build molecules, run MD or apply distance geometry restraints using generalized Born, Poisson-Boltzmann or 3D-RISM implicit solvent models</li>
+  <li><strong>antechamber and MCPB</strong>: programs to create force fields for general organic molecules and metal centers</li>
+  <li><strong>tleap and parmed</strong>: basic preparatory tools for Amber simulations</li>
+  <li><strong>sqm</strong>: semiempirical and DFTB quantum chemistry program</li>
+  <li><strong>pbsa</strong>: performs numerical solutions to Poisson-Boltzmann models</li>
+  <li><strong>3D-RISM</strong>: solves integral equation models for solvation</li>
+  <li><strong>sander</strong>: workhorse program for molecular dynamics simulations</li>
+  <li><strong>gem.pmemd</strong>: tools for using advanced force fields</li>
+  <li><strong>mdgx</strong>: a program for pushing the boundaries of Amber MD, primarily through parameter fitting. Also includes customizable virtual sites and explicit solvent MD capabilities.</li>
+  <li><strong>cpptraj and pytraj</strong>: tools for analyzing structure and dynamics in trajectories</li>
+  <li><strong>MMPBSA.py</strong>: energy-based analyses of MD trajectories</li>
+</ul>
+
+<p>We are going to use a subset of these tools: <strong>antechamber (sqm), tleap, parmed, sander and cpptraj</strong>.</p>
+
+<hr />
+
+<h2 id="0-log-in-archer-and-load-the-environment">0. Log in ARCHER and load the environment</h2>
+
+<p>Accessing ARCHER:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh -XY user@login.archer.ac.uk
+</code></pre></div></div>
+
+<p><strong>WIP</strong>: I have installed AMBERTOOLS20 in the shared folder <code class="language-plaintext highlighter-rouge">/home/d118/d118/shared/amber20</code>. I think you should be able to access it and use it. Let me know if you cannot!</p>
+
+<p><strong>Software we will be using in this session:</strong></p>
+<ul>
+  <li><a href="https://ambermd.org/AmberTools.php">AmberTools</a> (We will use Ambertools20. If you are using an older version, commands might run slightly different.)</li>
+  <li><a href="http://propka.org">propKa</a></li>
+  <li><a href="http://openbabel.org/wiki/Main_Page">OpenBabel</a></li>
+  <li><a href="https://sourceforge.net/projects/pymol/">Pymol</a> or <a href="https://www.ks.uiuc.edu/Research/vmd/">VMD</a> or another molecular visualisation tool of your preference.</li>
+  <li><a href="https://chemaxon.com/products/marvin">Marvin Sketch</a>.</li>
+</ul>
+
+<p>To set up the proper environment you should run the following commands on ARCHER:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module load propka
+module load python-compute/3.4.3
+module swap PrgEnv-cray PrgEnv-gnu
+export AMBERHOME="/home/d118/d118/shared/amber20/"
+source /home/d118/d118/shared/amber20/amber.sh
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="1-preparing-the-pdb-file">1. Preparing the PDB file</h2>
+
+<h3 id="understanding-your-pdb-file">Understanding your PDB file</h3>
+
+<p>We are going to use the X-ray structure of Mpro protein bound to a ligand from the PanDDA library. The PDB id we are going to use is <a href="http://www.rcsb.org/structure/5R84">5R84</a>. If you open this entry from the <a href="https://www.rcsb.org">Protein DataBank</a> you will find a lot of information of the protein structure:</p>
+<ul>
+  <li>Experimental Data Snapshot</li>
+  <li>wwPDB Validation</li>
+  <li>Literature</li>
+  <li>Macromolecules</li>
+  <li>Small Molecules</li>
+  <li>Experimental Data &amp; Validation</li>
+  <li>Entry History</li>
+</ul>
+
+<p><img src="./images/PDBpage.png" alt="PDB page 5r84" /></p>
+
+<p>We are interested in the quality of the structure and the contents of the structure:</p>
+<ul>
+  <li><strong>Experimental Data Snapshot</strong> and <strong>wwPDB Validation</strong> give us information about the quality of the model. In this case, the X-ray structure is not so great but this fragment screening was resolved really fast to enable computational efforts. So it will have to do. For more information you can check out Bioexcel webinar on <a href="https://bioexcel.eu/webinar-10-assessing-structure-quality-in-the-pdb-archive/">Assessing structure quality in the PDB archive</a>.</li>
+  <li>The sections <strong>Macromolecules</strong> and <strong>Small Molecules</strong> give us information about the contents of the PDB file. We can see that there is only one macromolecule (only one chain) that corresponds to SARS-CoV-2 main protease. There are two small molecules in the structure: GWS and DMS.
+    <ul>
+      <li>DMS is a crystallisation product and it doesn’t interest us.</li>
+      <li>GWS is the fragment we want to model.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Once we know which molecules in the PDB file we want to model and which should be deleted from the PDB file, we can continue. 
+You can download the PDB file now or use the one we are providing in this repository.</p>
+
+<hr />
+
+<h3 id="splitting-the-pdb-in-protein-ligand-and-water-molecules">Splitting the PDB in protein, ligand and water molecules</h3>
+
+<p>First we will split the structure in the PDB in 3 different groups: protein, GWS ligand and water molecules as we need to treat them separately:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep -v -e "GWS" -e "DMS" -e "CONECT" -e "HOH" 5r84.pdb &gt;  protein.pdb
+grep "GWS" 5r84.pdb &gt; GWS.pdb
+grep "HOH" 5r84.pdb &gt; waters.pdb
+</code></pre></div></div>
+
+<p><img src="./images/fullsystem.png" alt="Full system" /></p>
+
+<hr />
+
+<h3 id="replicating-the-experimentaltarget-conditions">Replicating the experimental/target conditions</h3>
+
+<p>It is important to take into account the experimental conditions such as the pH of the system we want to simulate, salinity… Since Mpro protein from SARS-CoV2 will is located in the cytosol of the infected human cell so we are going to assume a <strong>pH=7.4</strong>. Please check the literature on your target protein before you start to run your simulations.</p>
+
+<p>As we mentioned before, we will have two molecules: a protein and a ligand. We will have to take care of the effect of pH in each one of them.</p>
+
+<h5 id="assessing-the-protonation-states-of-the-protein-and-preparing-the-protein-for-ambertools">Assessing the protonation states of the protein and preparing the protein for AMBERTools</h5>
+
+<p>There are several ways to assess the protonation of the residues in the protein (<a href="http://biophysics.cs.vt.edu">H++ server</a>, <a href="http://propka.org">propka</a>). We are going to use propKa command-line in this tutorial:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>propka31 protein.pdb 
+</code></pre></div></div>
+
+<p>PropKa returns the calculated pKa values for each residue. We have to compare each one of the pKa values with the chosen pH: if the pKa is below the chosen pH the residue should be deprotonated and above the chosen pH it will be protonated. PropKa returns the model-pKa for each kind of residue, which determines the <em>usual</em> protonation state for that type of residue.</p>
+
+<blockquote>
+  <p><strong>TIP</strong>: This step is not trivial when you are simulating catalytic sites, where the protonation changes can be part of the reaction mechanism. Please check the literature on your target protein before you start to run your simulations.</p>
+</blockquote>
+
+<p>This is the summary of the propKa output for our protein:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--------------------------------------------------------------------------------------------------------
+SUMMARY OF THIS PREDICTION
+       Group      pKa  model-pKa   ligand atom-type
+   ASP  33 A     3.79       3.80                      
+   ASP  34 A     3.63       3.80                      
+   ASP  48 A     2.69       3.80                      
+   ASP  56 A     4.00       3.80                      
+   ASP  92 A     3.11       3.80                      
+   ASP 153 A     3.88       3.80                      
+   ASP 155 A     3.00       3.80                      
+   ASP 176 A     3.90       3.80                      
+   ASP 187 A     3.97       3.80                      
+   ASP 197 A     3.81       3.80                      
+   ASP 216 A     3.52       3.80                      
+   ASP 229 A     2.15       3.80                      
+   ASP 245 A     4.03       3.80                      
+   ASP 248 A     3.37       3.80                      
+   ASP 263 A     3.53       3.80                      
+   ASP 289 A     3.28       3.80                      
+   ASP 295 A     3.91       3.80                      
+   GLU  14 A     4.00       4.50                      
+   GLU  47 A     4.67       4.50                      
+   GLU  55 A     4.73       4.50                      
+   GLU 166 A     3.98       4.50                      
+   GLU 178 A     4.88       4.50                      
+   GLU 240 A     4.60       4.50                      
+   GLU 270 A     4.67       4.50                      
+   GLU 288 A     4.42       4.50                      
+   GLU 290 A     5.79       4.50                      
+   HIS  41 A     4.60       6.50                      
+   HIS  64 A     6.26       6.50                      
+   HIS  80 A     5.71       6.50                      
+   HIS 163 A     2.04       6.50                      
+   HIS 164 A     1.44       6.50                      
+   HIS 172 A     5.51       6.50                      
+   HIS 246 A     5.37       6.50                      
+   CYS  16 A    11.92       9.00                      
+   CYS  22 A    10.26       9.00                      
+   CYS  38 A    12.83       9.00                      
+   CYS  44 A    11.04       9.00                      
+   CYS  85 A    11.68       9.00                      
+   CYS 117 A    11.97       9.00                      
+   CYS 128 A    12.86       9.00                      
+   CYS 145 A    11.82       9.00                      
+   CYS 156 A     9.54       9.00                      
+   CYS 160 A    13.16       9.00                      
+   CYS 265 A    12.18       9.00                      
+   CYS 300 A    10.29       9.00                      
+   TYR  37 A    11.88      10.00                      
+   TYR  54 A    15.15      10.00                      
+   TYR 101 A    12.87      10.00                      
+   TYR 118 A    10.28      10.00                      
+   TYR 126 A    13.10      10.00                      
+   TYR 154 A    10.17      10.00                      
+   TYR 161 A    15.42      10.00                      
+   TYR 182 A    13.69      10.00                      
+   TYR 209 A    13.21      10.00                      
+   TYR 237 A    10.15      10.00                      
+   TYR 239 A    13.26      10.00                      
+   LYS   5 A    10.57      10.50                      
+   LYS  12 A    10.41      10.50                      
+   LYS  61 A    10.72      10.50                      
+   LYS  88 A    10.14      10.50                      
+   LYS  90 A    10.56      10.50                      
+   LYS  97 A    10.37      10.50                      
+   LYS 100 A    11.37      10.50                      
+   LYS 102 A    10.76      10.50                      
+   LYS 137 A    10.33      10.50                      
+   LYS 236 A    10.69      10.50                      
+   LYS 269 A    11.49      10.50                      
+   ARG   4 A    12.41      12.50                      
+   ARG  40 A    14.21      12.50                      
+   ARG  60 A    12.46      12.50                      
+   ARG  76 A    12.59      12.50                      
+   ARG 105 A    13.13      12.50                      
+   ARG 131 A    15.69      12.50                      
+   ARG 188 A    12.33      12.50                      
+   ARG 217 A    12.15      12.50                      
+   ARG 222 A    12.45      12.50                      
+   ARG 279 A    12.06      12.50                      
+   ARG 298 A    12.61      12.50                      
+   N+    1 A     7.91       8.00  
+</code></pre></div></div>
+
+<p>We can see that all the residues are in their usual protonation state, therefore we do not need to modify residue names in the PDB. If you perform this step using the <a href="http://biophysics.cs.vt.edu">H++ server</a>, it will give you the same information and also a new PDB file with the necessary changes applied.</p>
+
+<blockquote>
+  <p><strong>Histidines</strong> are tricky residues, they have three possible protonation states: HID, HIE and HIP. HIP is the protonated residue. HID and HIE correspond to the neutral histidine protonated in <em>delta</em> or <em>epsilon</em> position. In solution, the most common conformer is HIE but always check your structure before assuming it will be HIE.</p>
+</blockquote>
+
+<p><img src="./images/H163.png" alt="H163 hbond DWS" />
+<strong>WIP</strong>: REDO this figure. Pymol session in the webinar.</p>
+
+<p>Last but not least, we need to clean the PDB file before feeding it to AmberTools. So we are going to use the first AmberTools tool: <code class="language-plaintext highlighter-rouge">pdb4amber</code> which cleans/prepares your PDB file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pdb4amber -i protein.pdb -o protein4amber.pdb  
+</code></pre></div></div>
+
+<p>It returns the following output:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>==================================================
+Summary of pdb4amber for: protein.pdb
+===================================================
+
+----------Chains
+The following (original) chains have been found:
+A
+
+---------- Alternate Locations (Original Residues!))
+
+The following residues had alternate locations:
+VAL_73
+ARG_217
+ASN_221
+-----------Non-standard-resnames
+
+
+---------- Mising heavy atom(s)
+
+None
+The alternate coordinates have been discarded.
+Only the first occurrence for each atom was kept.
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">pdb4amber</code> informs us about the duplicity of several sidechains, disulphide bonds and missing heavy atoms. It does not check protonation states for protein residues and therefore we <strong>ALWAYS</strong> must run a pKa calculation.</p>
+
+<h4 id="assessing-the-protonation-states-of-the-ligand">Assessing the protonation states of the ligand</h4>
+
+<p>We have check the protonation state of the protein but we have omited the ligand. We have to check the pKa of the ligand. There are several options to do so, the most reliable one if available is <a href="https://pubchem.ncbi.nlm.nih.gov">PubChem</a>, where you can find experimental pKa values.</p>
+
+<p>In this example, there are no pKa values (nor experimental nor calculated) reported for this molecule, so we need to use another resource. I like <a href="https://chemaxon.com/products/marvin">Marvin Sketch</a>: it is <em>free</em> to use, gives calculated pKa values and a nice visualisation of the chemical species at a certain pH.</p>
+
+<p><img src="./images/pKa_gws.png" alt="pKa calculation GWS" /></p>
+
+<p>After assessing the protonation state of the GWS ligand using Marvin Sketch, we can proceed to protonate it. The easiest way to protonate it is using <a href="http://openbabel.org">OpenBabel</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/d118/d118/shared/amber20/miniconda/bin/obabel -ipdb GWS.pdb -opdb -O GWS.H.pdb -h 
+</code></pre></div></div>
+
+<p>You should always check the result of this step and ammend it if needed. In this case, it gives the correct protonation state:</p>
+
+<p><img src="./images/GWS.png" alt="protonated GWS ligand" /></p>
+
+<hr />
+
+<h2 id="2-parameterising-your-ligand">2. Parameterising your ligand</h2>
+
+<p>This step is not trivial and there are many flavours and ways to do it. In this example, we are going to use a simple approach because we aim to use a QM description of the ligand in the QM/MM runs. If you have trouble parameterising your ligands here are some useful links:</p>
+
+<ul>
+  <li><a href="https://ambermd.org/tutorials/basic/tutorial4/index.htm">AMBER tutorial on simple ligand parameterisation</a></li>
+  <li><a href="https://ambermd.org/tutorials/advanced/tutorial1/section1.htm">AMBER tutorial on advanced ligand parameterisation</a></li>
+  <li><a href="http://www.ub.edu/cbdd/?q=content/small-molecule-dihedrals-parametrization">Parameterisation of dihedral angles</a></li>
+  <li><a href="http://research.bmh.manchester.ac.uk/bryce/amber/">AMBER parameter database</a></li>
+  <li><a href="http://ambermd.org/tutorials/advanced/tutorial23/">Paramfit tutorial</a></li>
+</ul>
+
+<p>In this example, we will make use of the <code class="language-plaintext highlighter-rouge">antechamber</code>and <code class="language-plaintext highlighter-rouge">parmchk2</code> tools from AmberTools package to generate AMBER force field parameters. We will use the “<strong>general AMBER force field 2 <a href="http://ambermd.org/antechamber/gaff.html">(GAFF2)</a></strong>”. This force field was designed to provide atom types andf atom parameters needed to parameterise most pharmaceutical molecules and is compatible with the traditional AMBER force fields. To assign partial charges, we are going to use <strong>AM1-BCC2 charge method</strong>. It is an unexpensive and fast method to calculate partial charges and any limitations of this method would be fixed by the QM treatment of the ligand in the QM/MM simulation.</p>
+
+<p><code class="language-plaintext highlighter-rouge">antechamber</code> allows the rapid generation of topology files for use with the AMBER simulation programs. It runs a series of other AmberTools programs (<code class="language-plaintext highlighter-rouge">sqm</code>, <code class="language-plaintext highlighter-rouge">divcon</code>, <code class="language-plaintext highlighter-rouge">atomtype</code>, <code class="language-plaintext highlighter-rouge">am1bcc</code>, <code class="language-plaintext highlighter-rouge">bondtype</code>, <code class="language-plaintext highlighter-rouge">espgen</code>, <code class="language-plaintext highlighter-rouge">respgen</code> and <code class="language-plaintext highlighter-rouge">prepgen</code>) to be able to:</p>
+
+<ul>
+  <li>Automatically identify bond and atom types</li>
+  <li>Judge atomic equivalence</li>
+  <li>Generate residue topology files</li>
+  <li>Find missing force field parameters and supply reasonable suggestions</li>
+</ul>
+
+<p>We will use <code class="language-plaintext highlighter-rouge">antechamber</code> to assign atom types to the GWS ligand and calculate a set of point charges. We will have to specify GAFF2 force field (<strong>-at gaff2</strong>, more information on the parameters here: <code class="language-plaintext highlighter-rouge">$AMBERHOME/dat/leap/parm/gaff.dat</code>), the charge method (<strong>-c bcc</strong>), the net charge of the molecule (<strong>-nc 0</strong>) and the name of the new residue generated (We are going to keep GWS: <strong>-rn GWS</strong>). We are going to output a mol2 file containing the atomtypes and the point charges.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>antechamber -i GWS.H.pdb -fi pdb -o GWS.mol2 -fo mol2 -c bcc -nc 0 -rn GWS -at gaff2
+</code></pre></div></div>
+
+<p>The output goes as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Welcome to antechamber 20.0: molecular input file processor.
+
+acdoctor mode is on: check and diagnosis problems in the input file.
+-- Check Format for pdb File --
+   Status: pass
+-- Check Unusual Elements --
+   Status: pass
+-- Check Open Valences --
+   Status: pass
+-- Check Geometry --
+      for those bonded   
+      for those not bonded   
+   Status: pass
+-- Check Weird Bonds --
+   Status: pass
+-- Check Number of Units --
+   Status: pass
+acdoctor mode has completed checking the input file.
+
+Info: Total number of electrons: 118; net charge: 0
+
+Running: /Users/sllabres/miniconda3/envs/py3/bin/sqm -O -i sqm.in -o sqm.out
+</code></pre></div></div>
+
+<p>The MOL2 file contains tridimensional information of the molecule as well as atomtype and point charges. You can find more information on the MOL2 format <a href="http://chemyang.ccnu.edu.cn/ccb/server/AIMMS/mol2.pdf">here</a>. The resulting MOL2 file is shown below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;TRIPOS&gt;MOLECULE
+GWS 
+   34    35     1     0     0
+SMALL
+bcc
+
+
+@&lt;TRIPOS&gt;ATOM
+      1 N1           7.5340     0.3440    17.5810 nb      1001 GWS      -0.643000
+      2 C4          13.4880    -0.5140    24.0620 c3      1001 GWS      -0.075900
+      3 C5          13.9760    -1.6820    23.2210 c3      1001 GWS      -0.078400
+      4 C6          13.4570    -1.5250    21.8030 c3      1001 GWS      -0.075900
+      5 C7          11.9470    -1.3430    21.7400 c3      1001 GWS      -0.075900
+                                       ...
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>TIP:</strong> The GAFF and GAFF2 atom types are in lower case. This is the mechanism by which the GAFF force field is kept independent of the macromolecular AMBER force fields. All of the traditional AMBER force fields use uppercase atom types. In this way the GAFF and traditional force fields can be mixed in the same calculation.</p>
+</blockquote>
+
+<p>While the most likely combinations of bond, angle and dihedral parameters are defined in the parameter file it is possible that our molecule might contain combinations of atom types for bonds, angles or dihedrals that have not been parameterised. If this is the case, we will have to specify any missing parameters before we can create our prmtop and inpcrd files in Leap.</p>
+
+<p>We will use <code class="language-plaintext highlighter-rouge">parmchk2</code> to test if all the parameters we require are available.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>parmchk2 -i GWS.mol2 -f mol2 -o GWS.frcmod -s gaff2
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">parmchk2</code> generates a parameter file that can be loaded into Leap in order to add missing parameters. It contains all of the missing parameters. If possible, it will fill in these missing parameters by analogy to a similar parameter. Let’s look at the generated GWS.frcmod file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Remark line goes here
+MASS
+
+BOND
+ca-ns  315.20   1.412       same as ca- n, penalty score=  0.0
+c -ns  356.20   1.379       same as  c- n, penalty score=  0.0
+hn-ns  527.30   1.013       same as hn- n, penalty score=  0.0
+
+ANGLE
+c -ns-ca   65.700     123.710   same as c -n -ca, penalty score=  0.0
+ca-ns-hn   48.000     116.000   same as ca-n -hn, penalty score=  0.0
+ns-c -o   113.800     123.050   same as n -c -o , penalty score=  0.0
+c -ns-hn   48.700     117.550   same as c -n -hn, penalty score=  0.0
+ca-ca-ns   85.600     120.190   same as ca-ca-n , penalty score=  0.0
+c3-c -ns   84.300     115.180   same as c3-c -n , penalty score=  0.0
+
+DIHE
+o -c -ns-ca   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+c3-c -ns-ca   1    0.750       180.000          -2.000      same as c3-c -n -ca
+c3-c -ns-ca   1    0.500         0.000           3.000      same as c3-c -n -ca, penalty score=  0.0
+o -c -ns-hn   1    2.500       180.000          -2.000      same as hn-n -c -o
+o -c -ns-hn   1    2.000         0.000           1.000      same as hn-n -c -o , penalty score=  0.0
+ca-ca-ns-c    1    0.950       180.000           2.000      same as c -n -ca-ca, penalty score=  0.0
+ns-c -c3-c3   1    0.000       180.000          -4.000      same as n -c -c3-c3
+ns-c -c3-c3   1    0.710       180.000           2.000      same as n -c -c3-c3, penalty score=  0.0
+ca-ca-ns-hn   4    1.800       180.000           2.000      same as X -ca-n -X , penalty score=  0.0
+c3-c -ns-hn   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+
+IMPROPER
+ca-ca-ca-ns         1.1          180.0         2.0          Using the default value
+ca-ca-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+c3-ns-c -o         10.5          180.0         2.0          Using general improper torsional angle  X- X- c- o, penalty score=  6.0)
+c -ca-ns-hn         1.1          180.0         2.0          Same as X -X -n -hn, penalty score=  6.0 (use general term))
+ca-h4-ca-nb         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 44.3 (use general term))
+
+NONBON
+
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>TIP</strong>: You should check these parameters carefully before running a simulation. If antechamber can’t empirically calculate a value or has no analogy it will either add a default value that it thinks is reasonable or alternatively insert a place holder (with zeros everywhere) and the comment “<strong>ATTN: needs revision</strong>”. In this case you will have to manually parameterise this yourself. See the links at the beginning of the section.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="3-system-set-up">3. System set up</h2>
+
+<p>Once we have parameters for our ligand and a prepared protein PDB file, we can start building our system and creating topology and coordinate files for AMBER. To create the mentioned files we will use <code class="language-plaintext highlighter-rouge">Leap</code>. there are two versions of leap: the GUI version <code class="language-plaintext highlighter-rouge">xLeap</code> and the terminal version <code class="language-plaintext highlighter-rouge">tLeap</code>. <code class="language-plaintext highlighter-rouge">xLeap</code> is better to learn Leap because you can visualise the result of each command you try. However, <code class="language-plaintext highlighter-rouge">xleap</code> is quite buggy and it can be frustrating before you get used to all its quirks.</p>
+
+<p>In this session, we are going to use <code class="language-plaintext highlighter-rouge">tleap</code> and I am going to walk you through every command we use. If you type tleap you should enter in the tleap command-line. If you want to check what you did in previous session of Leap, Leap is quite verbose and informs you of everything it does as well writing it into the <strong>leap.log</strong> file.</p>
+
+<p>We have prepared a leap script to set up our system and we are going to explain briefly.</p>
+
+<p>We are going to use default force fields (amberff14SB, tip3p and GAFF2) in this tutorial, so we can use the leaprc scripts already included in AMBER:</p>
+<ul>
+  <li>leaprc.protein.ff14SB for the protein</li>
+  <li>leaprc.gaff2 for the ligand molecule</li>
+  <li>leaprc.water.tip3p for the water molecules.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Load force field parameters
+source leaprc.protein.ff14SB
+source leaprc.gaff2
+source leaprc.water.tip3p
+</code></pre></div></div>
+
+<p>Now we have to include the following units: protein, ligand and the water molecules in <code class="language-plaintext highlighter-rouge">tLeap</code>. We are going to start with the ligand using the two files we have created before: <strong>GWS.frcmod</strong> and <strong>GWS.mol2</strong> (mol2 file already includes the coordinates of the ligand). After, we load the coordinates for the protein and the water molecules with the <code class="language-plaintext highlighter-rouge">loadPDB</code> command.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Load extraparameters for the ligand
+loadamberparams GWS.frcmod
+
+# Load protein, ligand and water molecules
+protein = loadPDB protein4amber.pdb
+GWS = loadmol2 GWS.mol2
+waters = loadPDB waters.pdb
+</code></pre></div></div>
+
+<p>From the very beginning of this series, we have splitted the system into these three pieces, now we join them again with the <code class="language-plaintext highlighter-rouge">combine</code> command.</p>
+
+<blockquote>
+  <p><strong>TIP</strong>: It is good practice to check the resulting structure of this combination step (<code class="language-plaintext highlighter-rouge">savePDB</code> command to save a PDB file) and to perform a sanity check on the unit we have created with <code class="language-plaintext highlighter-rouge">check</code> command: it determines the charge of the system, close contacts (it is normal to have them after adding hydrogen atoms) and checks if there are any missing parameters.</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Build system
+system = combine {protein GWS waters}
+savepdb system  system.dry.pdb
+
+check system
+</code></pre></div></div>
+
+<p>If the unit is OK, we can continue! Now we need to solvate it and add counter ions to neutralise the system.</p>
+
+<p>To solvate the system, we can use 2 different commands: <code class="language-plaintext highlighter-rouge">solvateOct</code> and <code class="language-plaintext highlighter-rouge">solvateBox</code>. These commands differ in the shape of the resulting simulation box: the first command creates an octaedric solvation box and the second a cubic solvation box. Since octaedric boxes are smaller and compatible with globular proteins, we are going to use <code class="language-plaintext highlighter-rouge">solvateOct</code>.</p>
+
+<p>Last but not least, we need to neutralise the system by adding counterions. It is easy and simple to use the <code class="language-plaintext highlighter-rouge">addions2</code> command like this: <code class="language-plaintext highlighter-rouge">addions2 system Na+ 0</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Solvate
+solvateOct system TIP3PBOX 12 iso
+
+# Neutralise
+addions2 system Cl- 0
+addions2 system Na+ 0
+</code></pre></div></div>
+
+<p>Now we can proceed to save our topology and coordinate files with <code class="language-plaintext highlighter-rouge">saveamberparm system system.parm7 system.rst7</code>. Before doing anything else, Leap checks that the unit it is OK and then proceeds to build the topology and write the coordinates. Finally it prints a summary of the ends of the system molecules. We have a SER in the N terminal end and THR on the C terminal end of the protein, a ligand named GWS and 20097 water molecules.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Save AMBER input files
+savePDB system system.pdb
+saveAmberParm system system.parm7 system.rst7
+
+quit
+</code></pre></div></div>
+
+<p>To execute it:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tleap -f leapin
+</code></pre></div></div>
+
+<p>You can find more information about Leap usage in the <a href="https://ambermd.org/doc12/Amber20.pdf">AMBER documentation</a>. Other Leap related FAQ can be found here: http://ambermd.org/Questions/leap.html</p>
+
+<hr />
+
+<h1 id="coffee-break">COFFEE BREAK</h1>
+
+<hr />
+
+<p>Before running any QM/MM simulation, we must <strong>ALWAYS</strong> equilibrate the system using only molecular mechanics (MM). To do so we must minimise the structure first to avoid bad contacts that might blow-up our simulation.</p>
+
+<p>To do so, we are going to minimise and equilibrate the system using <code class="language-plaintext highlighter-rouge">sander</code> tool from AmberTools suite. Commented input files and ARCHER submission scripts will be provided to make these steps easier to follow. You can find more information on the sander input options in <a href="https://ambermd.org/doc12/Amber20.pdf">Chapter 19</a> of the Amber10 manual.</p>
+
+<hr />
+
+<h2 id="4-system-minimisation-mm">4. System minimisation (MM)</h2>
+
+<p><code class="language-plaintext highlighter-rouge">sander</code> needs the initial coordinates (<code class="language-plaintext highlighter-rouge">-c system.rst7</code>), topology (<code class="language-plaintext highlighter-rouge">-p system.parm7</code>) and input file (<code class="language-plaintext highlighter-rouge">-i sander_min.in</code>). Also, we can specify the name of output files such as output file (<code class="language-plaintext highlighter-rouge">-o</code>) and final coordinates (<code class="language-plaintext highlighter-rouge">-r</code>).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sander -O -i sander_min.in -o min_classical.out -p system.parm7 -c system.rst7 -r system.min.rst7
+</code></pre></div></div>
+
+<p>We will minimise in 4500 steps using two different methods: steepest descent and conjugate gradient. The sander input file looks like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Minimisation of system 
+ &amp;cntrl
+  imin=1,        ! Perform an energy minimization.
+  maxcyc=4500,   ! The maximum number of cycles of minimization. 
+  ncyc=2000,     ! The method will be switched from steepest descent to conjugate gradient after NCYC cycles.
+ /
+</code></pre></div></div>
+
+<p>The final results are here: <strong>TO UPDATE</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+   4500      -2.6498E+05     1.9059E-01     2.1137E+01     CG       4025
+
+ BOND    =    20234.2575  ANGLE   =      606.0604  DIHED      =     3423.4910
+ VDWAALS =    49177.3328  EEL     =  -351445.8065  HBOND      =        0.0000
+ 1-4 VDW =      952.7618  1-4 EEL =    12074.5353  RESTRAINT  =        0.0000
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="5-thermalisation-and-pressure-equilibration-mm">5. Thermalisation and Pressure equilibration (MM)</h2>
+
+<p>After the minimisation step, we will heat the system up to the target temperature 310K (36°C) at constant volume and then after equilibrate the pressure and density of the system at contant pressure.</p>
+
+<p><strong>Thermalisation</strong></p>
+
+<p>We will use the input file <strong>sander_heat.in</strong> to thermalisation, where we use a temperature ramp that will slowly increase the temperature and allow to allow the system to accomodate.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Heating ramp from 100K to 300K 
+ &amp;cntrl
+  imin=0,                   ! Run molecular dynamics.
+  ntx=1,                    ! Initial file contains coordinates, but no velocities.
+  irest=0,                  ! Do not restart the simulation
+  nstlim=10000,             ! Number of MD-steps to be performed.
+  dt=0.002,                 ! Time step (ps)
+  ntf=2, ntc=2,             ! Constrain lengths of bonds having hydrogen atoms (SHAKE)
+  tempi=0.0, temp0=300.0,   ! Initial and final temperature
+  ntpr=100, ntwx=100,       ! Output options
+  cut=8.0,                  ! non-bond cut off
+  ntb=1,                    ! Periodic conditiond at constant volume
+  ntp=0,                    ! No pressure scaling
+  ntt=3, gamma_ln=2.0,      ! Temperature scaling using Langevin dynamics with the collision frequency in gamma_ln (ps−1)
+  ig=-1,                    ! seed for the pseudo-random number generator will be based on the current date and time.
+  nmropt=1,                 ! NMR options to give the temperature ramp.
+ /
+&amp;wt type='TEMP0', istep1=0, istep2=9000, value1=0.0, value2=300.0 /
+&amp;wt type='TEMP0', istep1=9001, istep2=10000, value1=300.0, value2=300.0 /
+&amp;wt type='END' /
+</code></pre></div></div>
+
+<p>The final results are here: <strong>TO UPDATE</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> NSTEP =    10000   TIME(PS) =      20.000  TEMP(K) =   298.87  PRESS =     0.0
+ Etot   =   -156391.2390  EKtot   =     39292.6561  EPtot      =   -195683.8951
+ BOND   =       949.1198  ANGLE   =      2397.4235  DIHED      =      3895.6936
+ 1-4 NB =      1090.0599  1-4 EEL =     12054.3523  VDWAALS    =     24789.0486
+ EELEC  =   -240859.5929  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ Ewald error estimate:   0.3083E-04
+</code></pre></div></div>
+
+<hr />
+
+<p><strong>Pressure equilibration</strong></p>
+
+<p>Then, we will use the input file <strong>sander_equil.in</strong> to equilibrate the density of the system:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Density equilibration
+&amp;cntrl
+  imin= 0,                       ! Run molecular dynamics.
+  nstlim=25000,                  ! Number of MD-steps to be performed.
+  dt=0.002,                      ! Time step (ps)
+  irest=1,                       ! Restart the simulation
+  ntx=5,                         ! Initial file contains coordinates and velocities.
+  ntpr=100, ntwx=100, ntwr=100,  ! Output options
+  cut=8.0,                       ! non-bond cut off
+  temp0=298,                     ! Temperature
+  ntt=3, gamma_ln=3.0,           ! Temperature scaling using Langevin dynamics with the collision frequency in gamma_ln (ps−1)
+  ntb=2,                         ! Periodic conditiond at constant pressure
+  ntc=2, ntf=2,                  ! Constrain lengths of bonds having hydrogen atoms (SHAKE)
+  ntp=1, taup=2.0,               ! Pressure scaling
+  iwrap=1, ioutfm=1,             ! Output trajectory options
+/
+</code></pre></div></div>
+
+<p>The final results are here: <strong>TO UPDATE</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> NSTEP =    10000   TIME(PS) =      20.000  TEMP(K) =   298.87  PRESS =     0.0
+ Etot   =   -156391.2390  EKtot   =     39292.6561  EPtot      =   -195683.8951
+ BOND   =       949.1198  ANGLE   =      2397.4235  DIHED      =      3895.6936
+ 1-4 NB =      1090.0599  1-4 EEL =     12054.3523  VDWAALS    =     24789.0486
+ EELEC  =   -240859.5929  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ Ewald error estimate:   0.3083E-04
+</code></pre></div></div>
+
+<h2 id="6-ammend-the-forcefield-before-running-qmmm-runs">6. Ammend the forcefield before running QM/MM runs</h2>
+
+<p>We need to ammend the forcefield before starting QM/MM calculations because the amber forcefiled does not have Lennard-Jones parameters for all the hydrogen atoms. To do that we need to modify the topology with the tool <code class="language-plaintext highlighter-rouge">parmed</code>.</p>
+
+<p>```parmed system.parm7
+printDetails @4685
+changeLJSingleType :WAT@H1 0.3019 0.047
+changeLJSingleType :WAT@H2 0.3019 0.047
+printDetails @11
+changeLJSingleType :SER@HG  0.3019 0.047
+printDetails @549
+changeLJSingleType :TYR@HH   0.3019 0.047
+outparm systemx_LJ_mod.parm7
+quit</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+This step prevents creating unphysical interactions between the hydrogen atoms of water and serine and QM subsystem. After topology correction the thermostat should stay stable during the QMMM calculation. 
+
+## 7. QM/MM Production runs
+
+
+
+</code></pre></div></div>
+<p>CP2K input
+```</p>
+
+</article>
+
+      
+      
+
+
+
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-md-6 copyright" align="left">
+	
+    </div>
+    <div class="col-md-6 help-links" align="right">
+	
+	<a href="/edit//all_data.md" data-checker-ignore>Edit on GitHub</a>
+	
+	/
+	<a href="/blob//CONTRIBUTING.md" data-checker-ignore>Contributing</a>
+	/
+	<a href="/">Source</a>
+	/
+	<a href="/blob//CITATION" data-checker-ignore>Cite</a>
+	/
+	<a href="mailto:s.llabres@epcc.ed.ac.uk">Contact</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" align="center">
+      Using <a href="https://github.com/carpentries/styles/">The Carpentries style</a>
+      version <a href="https://github.com/carpentries/styles/releases/tag/v9.5.3">9.5.3</a>.
+    </div>
+  </div>
+</footer>
+
+      
+    </div>
+    
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/lesson.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-37305346-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
